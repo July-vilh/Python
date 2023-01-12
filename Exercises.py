@@ -31,3 +31,22 @@ print(l)
 
 # РЕЗУЛЬТАТ: [4, 8, 10, 44, 22, 50, 54, 28]
 #            [1, 3, 4, 5, 8, 9, 10, 44, 22, 50, 79, 54, 28, 91]
+
+_______________________________
+
+# 4. Все emails у которых есть слово test вывести в другой список
+l = ['webtest1@gmail.com',
+     'alex_dr5@gmail.com',
+     'elena_viktorovna@gmail.com',
+     'infotest@gmail.com',
+     'sigmatesst@gmail.com',
+     'planet.dollsatest@gmail.com',
+     'loadtestsinfo@gmail.com',
+     'straightwaytest@gmail.com',
+     'test.of.tests@gmail.com',
+     'bigmac@gmail.com',
+     'bigmactest@gmail.com',
+     'kfc_test_supply@gmail.com',
+     'cyberdesk@gmail.com',
+     'supportonlinetest@gmail.com'
+     ]
