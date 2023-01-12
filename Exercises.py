@@ -50,3 +50,11 @@ l = ['webtest1@gmail.com',
      'cyberdesk@gmail.com',
      'supportonlinetest@gmail.com'
      ]
+
+k = []
+for i in l:
+     if 'test' in i:
+          k.append(i)
+print(k)
+print(l)
+
