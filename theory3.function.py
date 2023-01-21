@@ -45,6 +45,46 @@ ________
 задача таких переменных поменять то что уже существует при этом ничего не возвращая 
 2. Локальные (local)
 
+def f1(a1, a2, a3):
+    v1 = a1 * 2
+    v2 = a2 * 10
+    v3 = a3 * 7
+
+    return v1, v2, v3
+
+r1, r2, r3 = f1(2,3,4)
+print(r1, r2, r3)
+
+# АНАЛОГ:
+
+def f1(a1, a2, a3):
+    v1 = a1 * 2
+    v2 = a2 * 10
+    v3 = a3 * 7
+
+    result = [v1,v2,v3]
+    return result
+f_result = f1(2,3,4)
+print(f_result)
+
+# например вернуть второй элемент из списка:
+
+def f1(a1, a2, a3):
+    v1 = a1 * 2
+    v2 = a2 * 10
+    v3 = a3 * 7
+
+    result = [v1, v2, v3]
+    return result
+
+
+f_result = f1(2, 3, 4)
+print(f_result[2])
+
+  
+  
+  
+  
   
   
   
