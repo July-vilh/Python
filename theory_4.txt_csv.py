@@ -10,9 +10,9 @@
 
 file_path = 'C:\python\pythonProject\functios.py/' в конце скопированного пути любого файла ставить /
 
-Создать переменнуЮ. которой мы присваиваем "ПОТОК" (функция, которая работает с файлами)
+Создать переменную, которой мы присваиваем "ПОТОК" (функция, которая работает с файлами)
 
-Я с помощью своегот скрипта открываю поток, который читает файл, который я сказала читать. Мне его надо открыть, а потом закрыть 
+Я с помощью своего скрипта открываю поток, который читает файл, который я сказала читать. Мне его надо открыть, а потом закрыть 
 
 f = open(file_path + '22_txt.txt', 'w')
          
@@ -75,6 +75,44 @@ world
 
 ____________________________
 
+folder_path = 'C:\python\pythonProject\main.py'
+
+file_name = folder_path + '22_txt.txt'
+
+f = open(file_name, 'w')
+
+f.write('Hello world\n')
+f.write('Hello world\n')
+f.write('Hello world\n')
+f.write('Hello world\n')
+
+_________
+------------- РЕЗУЛЬТАТ: -------------------
+ 
+Hello world
+Hello world
+Hello world
+Hello world
+
+___________________________________________________________________________________________________________
+
+ПОТОКИ нужно ЗАКРЫВАТЬ то есть (f.close())
+ПОТОК - что-то сделал - ЗАКРЫЛ 
+
+ИТОГО:
+  
+folder_path = 'C:\python\pythonProject\main.py'
+
+file_name = folder_path + '22_txt.txt'
+
+f = open(file_name, 'w')
+
+f.write('Hello world\n')
+f.write('Hello world\n')
+f.write('Hello world\n')
+f.write('Hello world\n')
+
+f.close()
 
          
                                          
