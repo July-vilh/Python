@@ -109,14 +109,49 @@ ________________________________________________________________________________
    * ЦЕЛОЧИСЛЕННОЕ ДЕЛЕНИЕ (2) = print(5 // 2)
    * ОСТАТОК ОТ ДЕЛЕНИЯ (1) = print(5 % 2)
 
-2. ПРИСВОЕНИЕ ПЕРЕМЕННОЙ ДЛИННОГО ЗНАЧЕНИЯ (ЧЕРЕЗ input)
+2. ПРИСВОЕНИЕ ПЕРЕМЕННОЙ ДЛИННОГО ЗНАЧЕНИЯ 
+
+    ЧЕРЕЗ input ВВОД!!!!!!
+    
+    * ВАРИАНТ 1
+   
   
   ```
   user = input("Please, enter user name: ")
   print("Hello, " + user)
   ```
   
----------------------- Please, enter user name: 
+---------------------- Please, enter user name: Tom
+ 
+Hello, Tom
+
+   * ВАРИАНТ 2. АНАЛОГ:
+ ```
+user = input("Please, enter user name: ")
+print(f"Hi, {user}")
+ ```
+
+---------------------- Please, enter user name: Tom
+ 
+Hi, Tom
+
+- в фигурных скорбках указывается название переменной 
+
+    * ВАРИАНТ 3 (БОЛЕЕ УСТАРЕВШИЙ)
+
+```
+user = input("Please, enter user name: ")
+print("Hi, {}".format(user))
+```
+
+---------------------- Please, enter user name: Tom
+ 
+Hi, Tom
+
+
+
+
+
    
 
    
