@@ -28,7 +28,7 @@ id ИДЕНТИЧНЫЕ!
 ## str = СИМВОЛЬНАЯ СТРОКА
 
 ```
-* a = 5
+a = 5
 
 print(type(a))
 
@@ -36,14 +36,14 @@ print(type(a))
 ```
 ```
 
-* a = 4.5
+a = 4.5
 
 print(type(a))
 
 <class 'float'>
 ```
 ```
-* a = True
+a = True
 
 print(type(a))
 
@@ -51,7 +51,7 @@ print(type(a))
 ```
 ```
 
-* a = "Вася"
+a = "Вася"
 
 print (type(a))
 
