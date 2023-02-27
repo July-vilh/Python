@@ -23,20 +23,28 @@ id ИДЕНТИЧНЫЕ!
 ## bool = ЛОГИЧЕСКИЕ ЗНАЧЕНИЯ
 ## str = СИМВОЛЬНАЯ СТРОКА
 
-a = 5
+* a = 5
+
 print(type(a))
+
 <class 'int'>
 
-a = 4.5
+* a = 4.5
+
 print(type(a))
+
 <class 'float'>
 
-a = True
+* a = True
+
 print(type(a))
+
 <class 'bool'>
 
-a = "Вася"
+* a = "Вася"
+
 print (type(a))
+
 <class 'str'>
 
 
