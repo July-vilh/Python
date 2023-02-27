@@ -163,7 +163,19 @@ print(number ** 2)
 64
 
 ___________________________________________________________________________________________________________
+```
+user = input("Please, enter user name: ")
+age = int(input("Please, enter your age: "))
 
+print(f"Hello, {user}, your age is: {age}")
+```
+
+-------------------------------------
+Please, enter user name: Tom
+
+Please, enter your age: 19
+
+Hello, Tom, your age is: 19
 
 
 
