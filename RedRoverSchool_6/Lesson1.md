@@ -72,5 +72,18 @@ print(str(num2) + text)
 
 ------------- 33 попугая получится
 
+num = 5 
+num2 = 5.5
+res = num + num2
+print(res)
+print(type(res))
+
+---------------- автоматически python приведет все к типу float!!!!!!!!!
+
+---------------- 10.5
+                 <class 'float'>
+
+
+
 
 
