@@ -37,10 +37,11 @@ print (x < 3 and x > 8)
 ### 4. X < 3 AND NOT X < 8 (TRUE/FALSE) FALSE 
 
 
+
 ------------------------------------------------ УСЛОВНЫЕ ОПЕРАТОРЫ --------------------------------------------------------------------------
 
-## ОПЕРАТОР IF (Если да - то пиши...) для ПЕРВОГО варианта
-## ОПЕРАТОР ELSE (Если нет - то пиши...) для ВТОРОГО если только 2 условия и для ПОСЛЕДНЕГО если больше 2 условий
+#### ОПЕРАТОР IF (Если да - то пиши...) для ПЕРВОГО варианта
+#### ОПЕРАТОР ELSE (Если нет - то пиши...) для ВТОРОГО если только 2 условия и для ПОСЛЕДНЕГО если больше 2 условий
 
 ```
 num = 5
@@ -72,7 +73,7 @@ else:
     print('Go home, baby!')
 ```
 
----------------------------------------------------- ПРЕОБРАЗОВАНИЕ ОШИБКИ ПАЙЧАРМА В ЧЕЛОВЕЧЕСКУЮ -----------------------------------------------
+---------------------------------------------------- ПРЕОБРАЗОВАНИЕ ОШИБКИ ПАЙЧАРМА В ЧЕЛОВЕЧЕСКУЮ (try - except) -----------------------
 
 ```
 num1 = int(input('Please, enter first number: '))
@@ -84,5 +85,59 @@ try:
 except ZeroDivisionError:
     print('На ноль делить нельзя!')
 ```
+
+```
+num1 = int(input('Please, enter first number: '))
+num2 = int(input('Please, enter second number: '))
+operator = input('Please, enter operator: ')
+if num2 == 0 or operator == '/':
+    try:
+        result = num1 / num2
+        print(f'Результат: {result}')
+    except ZeroDivisionError:
+        print('На ноль делить нельзя!')
+else:
+    result = num1 * num2
+    print(f"Результат: {result}")
+```
+
+
+--------------------------------------------- ВЫ ВВЕЛИ НЕ ЧИСЛО (ПРЕОБР. ОШИБКИ) ---------------------------------------------------
+
+```
+try:
+    num1 = int(input('Please, enter first number: '))
+    num2 = int(input('Please, enter second number: '))
+except ValueError:
+    print('Вы ввели не число!')
+    operator = input('Please, enter operator: ')
+if num2 == 0 or operator == '/':
+    try:
+        result = num1 / num2
+        print(f'Результат: {result}')
+    except ZeroDivisionError:
+        print('На ноль делить нельзя!')
+else:
+    result = num1 * num2
+    print(f"Результат: {result}")
+```
+
+
+---------------------------- БИБЛИОТЕКА sys ОБ ОКОНЧАНИИ ДЕЙСТВИЯ КОДА -----------------------------------------------------------------
+
+```
+import sys
+try:
+    num1 = int(input('Please, enter first number: '))
+    num2 = int(input('Please, enter second number: '))
+except ValueError:
+    print('Вы ввели не число!')
+    sys.exit()
+    operator = input('Please, enter operator: ')
+```
+
+---------------------------------------------------------- ЦИКЛ ----------------------------------------------------------------------
+
+
 
 
