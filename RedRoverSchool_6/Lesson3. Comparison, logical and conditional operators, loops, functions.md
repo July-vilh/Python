@@ -136,25 +136,3 @@ except ValueError:
     operator = input('Please, enter operator: ')
 ```
 
----------------------------------------------------------- ЦИКЛ ----------------------------------------------------------------------
-
-## Цикл WHILE
-### Для цифер:
-
-```
-num = 0
-while num < 5:
-    print(num)
-    num+=1
-```
-
-### Для строки:
-
-```
-message = 'Hello'
-i = 1
-while i < 6:
-    print(message)
-    i+=1
-```
-
