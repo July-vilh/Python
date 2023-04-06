@@ -64,8 +64,8 @@ elif operator == '/':
     result = num1 / num2
 elif operator == '*':
     result = num1 * num2
-```
 
 else:
     print("Недопустимый оператор")
 print(f"{num1} {operator} {num2} = {result}")
+```
