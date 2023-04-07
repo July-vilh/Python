@@ -5,6 +5,10 @@ s = 'Hello world'
 print (s.replace('e', 'a'))
 ```
 
+РЕЗУЛЬТАТ:
+
+Hallo world
+
 Шаблон для метода Replace: s.replace(old value, new value, count)
 
 - old value = старое конкретное значение, которое мы хотим поменять
