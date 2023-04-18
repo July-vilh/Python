@@ -77,3 +77,93 @@ print(letters)
 
 > RESULT: ['ananas', 'banana', 'cat']
 
+``` 
+my_tuple = (1, 'name', None, 'name', 'name', 25)
+print(my_tuple.index('name'))
+print(my_tuple.count('name'))
+``` 
+> RESULT: 1 3
+
+### ЕСЛИ НАДЮ ВЫВЕСТИ ТОЛЬКО ЦИФРЫ ИЗ ТЮПЛА 
+
+``` 
+my_tuple = (1, 'name', None, 'name', 'name', 25)
+result = tuple([item for item in my_tuple if isinstance(item, int)])
+print(result)
+``` 
+> RESULT: (1, 25)
+
+> верни элемент для кажого элемента в тюпле если * [isinstance = МЕТОД, КОТОРЫЙ ПРОВЕРЯЕТ ТИП ДАННЫХ В ТЮПЛЕ] будет целым числом 
+
+                               ------------------------------- МЕТОДЫ ТЮПЛОВ -----------------------
+
+```
+my_tuple = (1, 'name', None, 'name', 'name', 25)
+result = tuple([item for item in my_tuple if isinstance(item, int)])
+print(result)
+
+print(f'Sum is: {sum(result)}')
+print(f'Max is: {max(result)}')
+print(f'Min is: {min(result)}')
+print(f'Length of my tuple is: {len(my_tuple)}')
+print(f'Length of the result is: {len(result)}')
+```
+
+> RESULT: 
+
+(1, 25)
+
+Sum is: 26
+
+Max is: 25
+
+Min is: 1
+
+Length of my tuple is: 6
+
+Length of the result is: 2
+
+------------------------------------------ ЦИКЛ В ТЮПЛЕ (ЦИКЛ FOR) ----------------------------------------------------
+
+Для того что бы пройтись по ТЮПЛУ и после чего отобразить его индекс
+
+```
+for (index, item) in enumerate(my_tuple):
+    print(index, item)
+```
+> RESULT:
+
+0 1
+
+1 name
+
+2 None
+
+3 name
+
+4 name
+
+5 25
+
+---------------------------------------- ЦИКЛ В ТЮПЛЕ (ЦИКЛ WHILE) -----------------------------------------
+
+```
+i = 0
+while i < len(my_tuple):
+    print(i, my_tuple[i])
+    i+=1
+```
+
+> RESULT:
+
+0 1
+
+1 name
+
+2 None
+
+3 name
+
+4 name
+
+5 25
