@@ -210,3 +210,31 @@ b = 5
 
 ------------------------------- 
 
+--------------------------------------------------- ДЛЯ ПОДСЧЕТА ПЕРЕДАННЫХ ЗГАЧЕНИЙ -------------------------------------------------------
+```
+def sum_it(*args):
+    total = 0
+    for num in args:
+        total = total + num
+    return(total)
+print(sum_it(4, 5, 10, 6, 20))
+print(sum_it(4, 5, 10, 6, 20, 4, 5, 10, 6, 20))
+```
+
+> RESULT: 45
+          90
+          
+ ``` 
+ def func(*args):
+    l = []
+    print(len(args))
+    for item in args:
+        l.append(item*item)
+    return l
+print(func(2, 5, 6, 8, 10))
+```
+
+> RESULT: 5
+
+[4, 25, 36, 64, 100]
+
