@@ -12,3 +12,13 @@ print(my_list[2])
  
 - распечатайте все строки, где есть буква 'a'
 
+
+### 3.3. Превратите лист ['cat', 'dog', 'horse', 'cow'] в кортеж
+```
+list = ['cat', 'dog', 'horse', 'cow']
+print(tuple(list))
+```
+> RESULT: ('cat', 'dog', 'horse', 'cow')
+
+
+
