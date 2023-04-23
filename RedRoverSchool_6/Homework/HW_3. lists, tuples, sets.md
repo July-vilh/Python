@@ -11,6 +11,12 @@ print(my_list[2])
 - получите сумму всех чисел
  
 - распечатайте все строки, где есть буква 'a'
+```
+list_1 = ['Hi', 'ananas', 2, None, 75, 'pizza', 36, 100]
+result = ([item for item in list_1 if isinstance(item, (int, float))])
+print(sum(result))
+```
+> RESULT: 213
 
 
 ### 3.3. Превратите лист ['cat', 'dog', 'horse', 'cow'] в кортеж
@@ -45,6 +51,8 @@ else:
 Перечислите членов семьи через запятую: eri, sirius
 
 family_1
+
+
 
 
 
