@@ -17,7 +17,11 @@ result = ([item for item in list_1 if isinstance(item, (int, float))])
 print(sum(result))
 ```
 > RESULT: 213
-
+```
+result_a = ([item for item in list_1 if isinstance(item, str) and 'a' in item])
+print(result_a)
+```
+> RESULT: ['ananas', 'pizza']
 
 ### 3.3. Превратите лист ['cat', 'dog', 'horse', 'cow'] в кортеж
 ```
