@@ -101,6 +101,15 @@ print(my_list)
 ```
 > RESULT: [1, 'hello', 2.0, None, True, 'Python is awesome!']
 
+> ------------- .extend() = для добавления в конец списка например ВТОРОГО СПИСКА
+```
+lst = [2, 5, 6, 7, 9]
+lst1 = ['Eri', 'Sirius']
+lst.extend(lst1)
+print(lst)
+```
+> RESULT: [2, 5, 6, 7, 9, 'Eri', 'Sirius']
+
 > ------------- .INSERT() = ДЛЯ ДОБАЛЕНИЯ ЭЛЕМЕТОВ В КОНКРЕТНОЕ МЕСТО В СПИСОК
 ```
 my_list = [1, "hello", 2.0, None, True]
