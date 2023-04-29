@@ -133,6 +133,39 @@ print(my_dict.keys())
 ```
 > RESULT: dict_keys(['name', 'last_name', 'age', 'department'])
 
+```
+dct = {
+    'USA' : '1',
+    'Russia': '7',
+    'Turkey': '90'
+}
+for key in dct.keys:
+    print(key)
+```
+> RESULT: 
+> 
+> USA
+> 
+> Russia
+> 
+> Turkey
+
+```
+dct = {
+    'USA' : '1',
+    'Russia': '7',
+    'Turkey': '90'
+}
+print(*dct, sep='\n')
+```
+> RESULT:
+>  
+> USA
+> 
+> Russia
+> 
+> Turkey
+
 1.2) ВЫВОД ЗНАЧЕНИЙ:
 
 ```
@@ -146,6 +179,44 @@ my_dict = {
 print(my_dict.values())
 ```
 > RESULT: dict_values(['Anna', 'Karenina', 35, 'IT'])
+
+```
+dct = {
+    'USA' : '1',
+    'Russia': '7',
+    'Turkey': '90'
+}
+for value in dct.values():
+    print(value)
+```
+> RESULT: 
+> 
+> 1
+> 
+> 7
+> 
+> 90
+
+---------------------------------- ВЫВОД СРАЗУ И КЛЮЧЕЙ И ЗНАЧЕНИЙ (ЦИКЛ):
+
+```
+dct = {
+    'USA' : '1',
+    'Russia': '7',
+    'Turkey': '90'
+}
+
+for key, value in dct.items():
+    print(key, value)
+```
+> RESULT: 
+> 
+> USA 1
+> 
+> Russia 7
+> 
+> Turkey 90
+
 
 3) .ITEMS() ИСПОЛЬЗУЕТСЯ ДЛЯ СОЗДАНИЯ КОРТЕЖЕЙ С КЛЮЧАМИ И ЗНАЧЕНИЯМИ
 
@@ -162,12 +233,50 @@ print(my_dict.items())
 > RESULT: dict_items([('name', 'Anna'), ('last_name', 'Karenina'), ('age', 35), ('department', 'IT')])
 
 5) .GET() МЕТОД ДЛЯ ПОЛУЧЕНИЯ ЗНАЧЕНИЯ ПО КЛЮЧУ
-6) .CLEAR() ОЧИСТИТЬ СЛОВАРЬ
-7) .COPY() СКОПИРОВАТЬ ВЕСЬ СЛОВАРЬ 
-8) LEN() ПОЛУЧИТЬ ДЛИНУ СЛОВАРЯ
-9) TYPE() УЗНАТЬ ТИП СЛОВАРЯ
-10) MIN() ПОЛУЧИТЬ КЛЮЧ С МИНИМАЛЬНЫМ ЗНАЧЕНИЕМ
-11) MAX() ПОЛУЧИТЬ КЛЮЧ С МАКСИМАЛЬНЫМ ЗНАЧЕНИЕМ
+
+```
+dct = {
+    'USA' : '1',
+    'Russia': '7',
+    'Turkey': '90'
+}
+
+print(dct.get('USA'))
+```
+> RESULT: 1
+
+-- ЕСли введенного ключа в словаре НЕТ то результатом будет None:
+
+```
+dct = {
+    'USA' : '1',
+    'Russia': '7',
+    'Turkey': '90'
+}
+
+print(dct.get('France'))
+```
+> RESULT: None 
+
+--- Типо ЗАМена None при ОТСУТСТВИИ страны:
+
+```
+dct = {
+    'USA' : '1',
+    'Russia': '7',
+    'Turkey': '90'
+}
+
+print(dct.get('France', 'Нет такой страны'))
+```
+> RESULT: Нет такой страны
+
+7) .CLEAR() ОЧИСТИТЬ СЛОВАРЬ
+8) .COPY() СКОПИРОВАТЬ ВЕСЬ СЛОВАРЬ 
+9) LEN() ПОЛУЧИТЬ ДЛИНУ СЛОВАРЯ
+10) TYPE() УЗНАТЬ ТИП СЛОВАРЯ
+11) MIN() ПОЛУЧИТЬ КЛЮЧ С МИНИМАЛЬНЫМ ЗНАЧЕНИЕМ
+12) MAX() ПОЛУЧИТЬ КЛЮЧ С МАКСИМАЛЬНЫМ ЗНАЧЕНИЕМ
 
 12) МЕТОД pop СНАЧАЛА ВОЗВРАЩАЕТ ЗНАЧЕНИЕ КЛЮЧА ПОТОМ В ПРИНЦИПЕ УДАЛЯЕТ ВЕСЬ КЛЮЧ:
 
@@ -222,3 +331,24 @@ employee1 = dict(name='Anna', last_name='Karenina', age=25)
 print(employee1)
 ```
 > RESULT: {'name': 'Anna', 'last_name': 'Karenina', 'age': 25}
+
+
+------------------------------------------------- СЛИЯНИЕ СЛОВАРЕЙ --------------------------------------------
+
+```
+dct = {
+    'USA' : '1',
+    'Russia': '7',
+    'Turkey': '90'
+}
+
+dct2 = {
+    'name':'Anna',
+    'last_name':'Karenina',
+    'age': 45
+}
+
+dct3 = dct | dct2
+print(dct3)
+```
+> RESULT: {'USA': '1', 'Russia': '7', 'Turkey': '90', 'name': 'Anna', 'last_name': 'Karenina', 'age': 45}
