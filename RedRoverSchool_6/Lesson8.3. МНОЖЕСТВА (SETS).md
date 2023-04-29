@@ -188,8 +188,11 @@ print(set_1 == set_2)
 print(set_2 == set_3)
 ```
 > RESULT: 
+> 
 > False
+> 
 > True
+> 
 > False
 
 -------------------- X in S = Принадлежит ли X множеству S
