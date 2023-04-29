@@ -170,6 +170,12 @@ print(sum(set_3))
 ```
 > RESULT: 6
 
+---------------------- СОРТИРОВКА = sorted(s)
+```
+sorted_num = sorted(set_2)
+print(sorted_num)
+```
+> RESULT: [1, 2, 3, 25, 100, 500]
 
 -------------------- X in S = Принадлежит ли X множеству S
 
