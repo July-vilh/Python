@@ -328,6 +328,41 @@ print(my_dict)
 > RESULT: IT
 
 {'name': 'Anna', 'last_name': 'Karenina', 'age': 35}
+_________________
+
+---- метод popitem удаляет ключ:значение по 1 строке и возвращает удаленные ключ:значение
+
+
+```
+dct = {
+    'USA' : '1',
+    'Russia': '7',
+    'Turkey': '90'
+}
+
+print(dct.popitem())
+```
+> RESULT : ('Turkey', '90')
+
+
+```
+dct = {
+    'USA' : '1',
+    'Russia': '7',
+    'Turkey': '90'
+}
+
+print(dct.popitem())
+print(dct.popitem())
+print(dct)
+```
+> RESULT: ('Turkey', '90')
+> 
+> ('Russia', '7')
+> 
+> {'USA': '1'}
+
+
 
 13) МЕТОД get:
 
@@ -386,3 +421,49 @@ dct3 = dct | dct2
 print(dct3)
 ```
 > RESULT: {'USA': '1', 'Russia': '7', 'Turkey': '90', 'name': 'Anna', 'last_name': 'Karenina', 'age': 45}
+
+
+------------------------- ПРЕВРАТИТЬ КЛЮЧИ СЛОВАРЕЙ В СПИСОК (list) -------------------
+
+```
+dct = {
+    'USA' : '1',
+    'Russia': '7',
+    'Turkey': '90'
+}
+
+keys = list(dct.keys())
+print(keys)
+```
+> RESULT: ['USA', 'Russia', 'Turkey']
+
+---- АНАЛОГИЧНО СО ЗНАЧЕНИЯМИ: 
+
+```
+dct = {
+    'USA' : '1',
+    'Russia': '7',
+    'Turkey': '90'
+}
+
+
+values = list(dct.values())
+print(values)
+``` 
+
+> RESULT: ['1', '7', '90']
+
+
+---- АНАЛОГИЧНО С items:э
+``` 
+dct = {
+    'USA' : '1',
+    'Russia': '7',
+    'Turkey': '90'
+}
+
+
+items = list(dct.items())
+print(items)
+``` 
+> RESULT: [('USA', '1'), ('Russia', '7'), ('Turkey', '90')]
