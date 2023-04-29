@@ -26,6 +26,12 @@ print(my_dict)
 ```
 > RESULT: {'name': 'Anna', 'last_name': 'Karenina', 'age': 35, 'department': 'IT'}
 
+```
+dct = dict(USA=1, Russia=7, Turkey=90)
+print(dct)
+```
+> RESULT: {'USA': 1, 'Russia': 7, 'Turkey': 90}
+
 ----------------- ПОЛУЧИТЬ КОНКРЕТНОЕ ЗНАЧЕНИЕ КЛЮЧА СО ВСЕГО СЛОВАРЯ
 
 ```
@@ -79,6 +85,21 @@ print(len(my_dict))
 ```
 > RESULT: 4
 
+------------------------------------- ЦИКЛ:
+```
+dct = {
+    'USA' : '1',
+    'Russia': '7',
+    'Turkey': '90'
+}
+
+if 'USA' in dct:
+    print('YES')
+else:
+    print('NO')
+```
+> RESULT: YES (тк ключ USA есть в данном словаре)
+> 
 ----------------------------------- ДОБАВИТЬ ЕЩЕ КЛЮЧ: ЗНАЧЕНИЕ К СЛОВАРЮ 
 
 ```
