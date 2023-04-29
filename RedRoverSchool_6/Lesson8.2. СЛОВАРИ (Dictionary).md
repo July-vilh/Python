@@ -271,6 +271,40 @@ print(dct.get('France', 'Нет такой страны'))
 ```
 > RESULT: Нет такой страны
 
+---------------- МЕтод setdefault = похож на Get но отличается тем, что можно добавить значение которого нет в словарь!!!!!
+
+```
+dct = {
+    'USA' : '1',
+    'Russia': '7',
+    'Turkey': '90'
+}
+
+print(dct.setdefault('France'))
+print(dct)
+```
+> RESULT:
+> 
+> None
+> 
+> {'USA': '1', 'Russia': '7', 'Turkey': '90', 'France': None}
+
+
+```
+dct = {
+    'USA' : '1',
+    'Russia': '7',
+    'Turkey': '90'
+}
+
+print(dct.setdefault('France', '+75'))
+print(dct)
+```
+> RESULT: +75
+> 
+> {'USA': '1', 'Russia': '7', 'Turkey': '90', 'France': '+75'}
+
+
 7) .CLEAR() ОЧИСТИТЬ СЛОВАРЬ
 8) .COPY() СКОПИРОВАТЬ ВЕСЬ СЛОВАРЬ 
 9) LEN() ПОЛУЧИТЬ ДЛИНУ СЛОВАРЯ
