@@ -12,5 +12,29 @@ def get_status(is_busy):
  ```
  ___________________________________________________________
  
- 2) 
+2) - Each of the numbers in the array refers to the position of a letter in the string, in increasing order.
+
+- Spaces are not places, you need the actual letters. No spaces.
+
+- The returned word should be all lowercase letters.
+
+- if you can't find one of the letters using the index numbers, return "No mission today"
+
+ ```
+def missing(nums, s):
+    nums.sort()
+    s = s.split()
+    s = ''.join()
+    output = ''
+    for i in nums:
+        if i >=len(s):
+            retutn "No mission today"
+        output +=s [i]
+        
+return output.lower()
+    
+ ```
  
+ s = s.split (тут мы строку переделали в лист)
+ 
+ s = ''.join() (тут мы лист обратно переделали в строку но без пробелов уже)
