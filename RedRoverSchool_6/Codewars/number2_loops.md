@@ -40,6 +40,7 @@ return output.lower()
  s = ''.join() (тут мы лист обратно переделали в строку но без пробелов уже)
  
  
+ ________________________________________
  
 3)  Your task is to remove all consecutive duplicate words from a string, leaving only first words entries. For example:
 
