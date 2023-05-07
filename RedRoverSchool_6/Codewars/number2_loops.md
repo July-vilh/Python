@@ -59,4 +59,25 @@ Words will be separated by a single space. There will be no leading or trailing 
     
  ```
  
+ ___________________________________________
  
+ 4. Given a string and an array of integers representing indices, capitalize all letters at the given indices.
+
+For example:
+
+capitalize("abcdef",[1,2,5]) = "aBCdeF"
+
+capitalize("abcdef",[1,2,5,100]) = "aBCdeF". There is no index 100. The input will be a lowercase string with no spaces and an array of digits.
+
+```
+def capitalize(s, ind):
+    word = ''
+    for i in range(len(s)):
+        if i in ind:
+            word += s[i].upper()
+        else:
+            word += s[i]
+    return word
+```
+
+
