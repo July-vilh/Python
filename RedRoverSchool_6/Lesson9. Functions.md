@@ -36,7 +36,7 @@ ___________________________________
 def sum(x, y):
     return x + y
     
-sum (1,2)
+print(sum(1,2))
 ```
 
 x, y ПАРАМЕТРЫ
@@ -55,7 +55,7 @@ sum(1,2) АРГУМЕНТЫ
 def add_it(a, b, c = 3):
      return a + b + c
      
-add_it(8, 10, c = 5)
+print(add_it(8, 10, c = 5))
 ```
 
 8, 10, c = 5 СТРОГО ПО ПОРЯДКУ
@@ -68,7 +68,7 @@ _________
 def add_it(a, b, c = 3):
      return a + b + c
      
-add_it(b = 8, a  = 10, c = 18)
+print(add_it(b = 8, a  = 10, c = 18))
 ```
 
 b = 8, a  = 10, c = 18 НЕ ПО ПОРЯДКУ
