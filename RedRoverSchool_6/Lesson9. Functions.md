@@ -139,3 +139,31 @@ print(mult(5, 6))
 > RESULT: 30
 
 
+------------- ОТФИЛЬТРОВАТЬ СПИСОК С ПОМОЩЬЮ lambda функции для получения только ЧЕТНЫХ ЗНАЧЕНИЙ
+
+```
+l = [20, 'str', 15, 18, 'yes', 'apple', 48, 40.5]
+filters = list(filter(lambda x: isinstance(x, int) and x % 2 == 0, l))
+print(filters)
+```
+> RESULT: [20, 18, 48]
+
+
+Для нечетных значений: 4
+
+```
+l = [20, 'str', 15, 18, 'yes', 'apple', 48, 40.5]
+filters = list(filter(lambda x: isinstance(x, int) and x % 2, l))
+print(filters)
+```
+> RESULT: [15]
+
+Для вывода БЕЗ квадратных скобок:
+
+```
+l = [20, 'str', 15, 18, 'yes', 'apple', 48, 40.5]
+filters = list(filter(lambda x: isinstance(x, int) and x % 2, l))
+print(*filters)
+```
+> RESULT: 15
+
