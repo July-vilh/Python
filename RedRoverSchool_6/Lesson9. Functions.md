@@ -60,6 +60,15 @@ print(add_it(8, 10, c = 5))
 
 8, 10, c = 5 СТРОГО ПО ПОРЯДКУ
 
+```
+def person(f_name, last_name, age):
+    return f'Hello, my name is {f_name} {last_name}, I am {age} years old'
+
+print(person('Anna', 'Smith', 30))
+```
+
+> RESULT: Hello, my name is Anna Smith, I am 30 years old
+> Выдало верно, тк указали в подходящем порядке переменные
 _________
 
 Для ИМЕНОВАННЫХ можно НЕ СОБЛЮДАТЬ ПОРЯДОК:
@@ -72,3 +81,34 @@ print(add_it(b = 8, a  = 10, c = 18))
 ```
 
 b = 8, a  = 10, c = 18 НЕ ПО ПОРЯДКУ
+
+```
+def person(f_name, last_name, age = 20):
+    return f'Hello, my name is {f_name} {last_name}, I am {age} years old'
+
+print(person('Anna', 'Smith'))
+```
+
+> RESULT: Hello, my name is Anna Smith, I am 20 years old
+> Все верно, тк возраст именованный 
+
+
+
+-------------------------------------------------------- ВСТРОЕННАЯ ФУНКЦИЯ: 
+
+```
+print(sum([5, 6, 8, 12]))
+```
+> RESULT: 31
+
+
+```
+print(min([5, 6, 8, 12]))
+```
+> RESULT: 5
+
+```
+print(max([5, 6, 8, 12]))
+```
+> RESULT: 12
+
