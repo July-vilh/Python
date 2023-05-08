@@ -167,3 +167,12 @@ print(*filters)
 ```
 > RESULT: 15
 
+
+Вывод ОДНОВРЕМЕННО и ЦЕЛЫХ ЧИСЕЛ и ФЛОАТ
+
+```
+l = [20, 'str', 15, 18, 'yes', 'apple', 48, 40.5]
+filters = list(filter(lambda x: isinstance(x, int) or isinstance(x, float), l))
+print(*filters)
+```
+> RESULT: 20 15 18 48 40.5
