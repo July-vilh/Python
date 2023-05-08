@@ -176,3 +176,25 @@ filters = list(filter(lambda x: isinstance(x, int) or isinstance(x, float), l))
 print(*filters)
 ```
 > RESULT: 20 15 18 48 40.5
+
+
+```
+def calc (a, b=1):
+    print(a*b)
+
+result = calc(5, 9)
+print(f'Result: {result}')
+```
+> RESULT: 
+> 45
+> Result: None
+
+
+```
+def calc (a, b=1):
+    return a*b
+
+result = calc(5, 9)
+print(f'Result: {result}')
+```
+> Result: Result: 45
