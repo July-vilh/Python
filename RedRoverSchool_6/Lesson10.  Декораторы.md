@@ -16,3 +16,24 @@ def decorator_function(func):
 ```
 
 
+_________________________________________________
+
+```
+def my_decorator(func):
+    def wrapper():
+        print('Я-обертка!')
+        func()
+        print('Завернули')
+    return wrapper()
+
+def say_hello():
+    print(f'Hello')
+
+say_hello = my_decorator(say_hello)
+```
+
+> RESULT: 
+> Я-обертка!
+> Hello
+> Завернули
+
