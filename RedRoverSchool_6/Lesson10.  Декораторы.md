@@ -37,3 +37,50 @@ say_hello = my_decorator(say_hello)
 > Hello
 > Завернули
 
+
+_________________________________________________________
+
+```
+def my_decorator(func):
+    def wrapper():
+        print('Я-обертка!')
+        func()
+        print('Завернули')
+    return wrapper()
+
+@my_decorator
+def say_hello():
+    print(f'Hello')
+```
+
+АНАЛОГ КОДА ДЛЯ СТРОКИ say_hello = my_decorator(say_hello) (= @my_decorator)
+
+> RESULT: 
+> Я-обертка!
+> Hello
+> Завернули
+
+
+--------------------------------- Если нам нужно передать еще доп. параметр в функции например {name}, то к wrapper и func ДОБАВЛЯЕМ (arg) + у return wrapper удаляем скобки и 
+
+------------- + вызываем функцию со стакой которую хотим передать say_hello('Sam"):
+
+
+```
+def my_decorator(func):
+    def wrapper(arg):
+        print('Я-обертка!')
+        func(arg)
+        print('Завернули')
+    return wrapper
+
+@my_decorator
+def say_hello(name):
+    print(f'Hello,{name}')
+
+say_hello(' Sam')
+```
+> RESULT: 
+> Я-обертка!
+> Hello, Sam
+> Завернули
