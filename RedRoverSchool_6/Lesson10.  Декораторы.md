@@ -84,3 +84,29 @@ say_hello(' Sam')
 > Я-обертка!
 > Hello, Sam
 > Завернули
+
+
+___________________________________________________________________________________________
+
+```
+def milk(func):
+    def wrapper():
+        print('hot milk')
+        func()
+    return wrapper()
+
+
+def sugar(func):
+    def wrapper():
+        print('sugar')
+        func()
+    return wrapper()
+
+@milk
+def coffee():
+    print('Coffee')
+```
+
+> RESULT:
+> hot milk
+> Coffee
