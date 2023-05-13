@@ -113,14 +113,5 @@ def coffee():
 
 
 _________________________________________________
-РАССЧИТАТЬ ДР (datetime)
 
-```
-import datetime
-bday = 1980
-current_date = datetime.date.today()
-age = current_date.year - bday
-print(age)
-```
-> RESULT: 43
 
