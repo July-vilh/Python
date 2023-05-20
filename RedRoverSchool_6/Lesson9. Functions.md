@@ -83,6 +83,57 @@ say_hello()
 ```
 > RESULT: Hello
 
+_________________________________________________________________
+
+Также в функциях могут быть встроены ЦИКЛЫ:
+
+```
+def check_even(a):
+    if a % 2 == 0:
+        print('Yes')
+    else:
+        print('No')
+
+for i in range(15):
+    check_even(i)
+```
+
+> RESULT: Yes
+> No
+> Yes и т.д.
+
+```
+def check_even(a):
+    for i in range(a):
+        if i % 2 == 0:
+            print('Yes')
+        else:
+            print('No')
+
+check_even(10)
+```
+
+> RESULT: Yes
+> No
+> Yes и т.д.
+
+---------------------------------- ЧЕРЕЗ return:
+
+```
+def check_even(a):
+    lst = []
+
+    for i in range(a):
+        if i % 2 == 0:
+            lst.append('Yes')
+        else:
+            lst.append('No')
+    return lst
+
+print(check_even(10))
+```
+> RESULT: ['Yes', 'No', 'Yes', 'No', 'Yes', 'No', 'Yes', 'No', 'Yes', 'No']
+
 ------------------------------ АРГУМЕНТЫ И ПАРАМЕТРЫ ------------------------------------------------------
 
 - ПАРАМЕТР это имя в списке параметров в первой строке определения функции. ОН ПОЛУЧАЕТ СВОЕ ЗНАЧЕНИЕ ПРИ ВЫЗОВЕ
