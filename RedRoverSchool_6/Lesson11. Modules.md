@@ -90,6 +90,23 @@ func1()
 ```
 > RESULT: enclosed
 
+----------------- ПОИСК ИДЕТ ИЗНУТРИ НАРУЖУ:
+
+```
+var = 'global'
+def func1():
+    var = 'enclosed'
+    def local():
+        var = 'local'
+        print(var)
+    local()
+func1()
+print(f'outside: {var}')
+```
+> RESULT: local
+> outside: global
+
+
 5. ЛОКАЛЬНОЕ (LOCAL) ПРОСТРАНСТВО ИМЕН включает в себя локальные имена внутри функции.Переменные, которые находятся внутри функций называются ЛОКАЛЬНЫМИ
 
 ```
