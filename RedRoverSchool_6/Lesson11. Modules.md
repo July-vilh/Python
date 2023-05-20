@@ -66,7 +66,7 @@ print(globals())
 > RESULT: {'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <_frozen_importlib_external.SourceFileLoader object at 0x000001FA8C464DD0>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, '__file__': 'C:\\Users\\Professional\\Desktop\\RedRoverSchool\\functions.py', '__cached__': None, 'l1': [20, 15, 8, 7, 6]}
 print(f'locals: {locals()}')
 
-3. ЗАМКНУТОЕ (ENCLOSED) ПРОСТРАНСТВО ИМЕН включает имена определенные внутри внешней функции
+3. ЗАМКНУТОЕ (ENCLOSED) ПРОСТРАНСТВО ИМЕН включает имена определенные внутри внешней функции. Что-то вроде ДЕКОРАТОРОВ например
 4. ЛОКАЛЬНОЕ (LOCAL) ПРОСТРАНСТВО ИМЕН включает в себя локальные имена внутри функции.Переменные, которые находятся внутри функций называются ЛОКАЛЬНЫМИ
 
 ```
