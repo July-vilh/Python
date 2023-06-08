@@ -139,7 +139,29 @@ print(f'locals: {locals()}')
 
 ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ = переменные которые не определены внутри какой-то функции + они видны ВО ВСЕМ участке кода
 
+ПРИМЕР ГЛОБАЛЬНЫХ ПЕРЕМЕННЫХ:
+
+```
+age = 17
+
+def print_age():
+    print(age)
+
+print_age()
+```
+> RESULT: 17
+
 ЛОКАЛЬНЫЕ = это те которые внутри интерфейса и их область видимости ограниена только внутри самой функции
+
+ПРИМЕР ЛОКАЛЬНЫХ ПЕРЕМЕННЫХ:
+
+```
+def print_age():
+    age = 17
+    print(age)
+print_age()
+```
+>RESULT: 17
 
 ```
 def fun():
@@ -151,4 +173,19 @@ print(f'Second {s}')
 > RESULT: 
 > First Hello
 > Second Hello
+
+```
+def fun():
+    s = 'Hi'
+    print(f'First {s}')
+s = 'Hello'
+fun()
+print(f'Second {s}')
+```
+> RESULT: 
+> First Hi
+> Second Hello
+
+
+
 
