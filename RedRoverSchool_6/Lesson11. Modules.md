@@ -203,4 +203,32 @@ multi()
 ```
 > RESULT: 35
 
+```
+def multi():
+    x = 10
+    print(x + y + c)
+    def sum_fun():
+        c = 20
+    sum_fun()
+y = 5
+multi()
+``` 
+> RESULT: НО ТУТ БУДЕТ ОШИБКА, тк ГЛУБЖЕ ПЕРЕМЕННУЮ (с) ОНО УЖЕ НЕ ВИДИТ, только из ГЛУБИНЫ ВО ВНЕШНЕЕ 
+
+```
+def multi():
+    x = 10
+    print(x + y + c)
+    def sum_fun():
+        c = 20
+        print(x + y + c)
+    sum_fun()
+y = 5
+c = 30
+multi()
+```
+> RESULT: 45
+> 35
+
+
 
