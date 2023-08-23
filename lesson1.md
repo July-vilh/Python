@@ -4,7 +4,7 @@
 3. tuple = (1, 2, 3) only for storing values and does not allow these values to be deleted!!! some "safe" for counting or getting index
 4. list = [1, 2, 3] can add and delete values!!!
 5. dict = {'key': 'value1'}
-6. set
+6. set = like dictionary but ONLY FOR SIMILAR VALUE (NOT KEY: VALUE)!!!!
 7. float
 
 1) Sum (method = __add__) for INTEGER (1):
@@ -107,5 +107,30 @@ a = {'key': 'value1',
 
 print(a['key2'])
 ```
-RESULT: ['value3', 2, 3]
+RESULT: ['value3', 2, 3
 
+6) set (delete duplicates!!!):
+
+```
+a = {1, 3, 4, 1, 1 , 3}
+print(a)
+```
+RESULT: {1, 3, 4}
+
+7) float:
+
+```
+b = 1
+a = 0.1
+c = a + b
+print(c)
+```
+RESULT: 1.1 (float)
+
+------------------- to determine the type:
+
+```
+a = 0.1
+print(type(a))
+```
+RESULT: <class 'float'>
