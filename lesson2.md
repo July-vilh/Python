@@ -3,6 +3,8 @@
 Program flow control allows us to control which parts of the code will be executed depending on various conditions.  The "if" statement allows you to check conditions and execute various blocks of code depending on whether the condition is met or not. 
 The "match" operator is a new operator in Python 3.10 that provides a new way to match values and execute different blocks of code depending on the match.
 
+## 1) "IF":
+
 ```
 name = 'Alex'
 
@@ -51,3 +53,18 @@ else:
 ```
 > RESULT: Hello (because after go to the elif and name == Ivan => the program is stop)
 
+## 2) "MATCH":
+
+```
+match name:
+    case 'Ivan':
+        print('Hello')
+    case 'Artur':
+        print('Hello')
+    case 'Nikita':
+        print('Hello')
+    case _:
+        print('Fuck u')
+```
+> RESULT: Hello
+:
