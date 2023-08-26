@@ -35,3 +35,19 @@ else:
 ```
 > but there after name == 'Ivan' => program is not stop and go + as a result: 'Hello' 'Fuck u'
 
+### SOLUTION = 'elif':
+
+```
+name = 'Ivan'
+
+if name == 'Ivan':
+    print('Hello')
+elif name == 'Artur':
+    print('Hello')
+elif name == 'Nikita':
+    print('Hello')
+else:
+    print('Fuck u')
+```
+> RESULT: Hello (because after go to the elif and name == Ivan => the program is stop)
+
