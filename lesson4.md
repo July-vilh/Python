@@ -62,3 +62,26 @@ if __name__ == '__main__':
             print('Fuck u')
 ```
 > RESULT: in module = "Hello, Artur!" and in application = "Hello, Ivan!"
+
+### if you need only 1 function (not all module) you can do import for this 1 fuction (not all module):
+
+### code (application):
+
+```
+from module import create_message
+print(create_message('Ivan'))
+```
+> RESULT: Hello, Ivan!
+
+### if you have 2 different modules, for solve problems you can add to the function aliases:
+
+```
+from module import create_message as hello
+from module1 import create_message as fuck
+print(hello('Ivan'))
+print(fuck('Alex'))
+```
+
+> RESULT: "Hello, Ivan!" + "fuck you, Alex!"
+
+
