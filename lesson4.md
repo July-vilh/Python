@@ -3,6 +3,7 @@
 Modules are files with the ".py" extension that contain code that can be used in other parts of the program (module = file, which contains smth functions).
 Packages are a way to organize related modules in one place.
 
+## 1) MODULES:
 ### module with code:
 
 ```
@@ -84,4 +85,15 @@ print(fuck('Alex'))
 
 > RESULT: "Hello, Ivan!" + "fuck you, Alex!"
 
+## 2) PACKAGE 
+### package after create = consists empty file init.py anf=d then you can do file (.py) transfer to the package 
+
+> RESULT (code at the application after transfer modules to the package):
+
+```
+from pack.module import create_message as hello
+from pack.module1 import create_message as fuck
+print(hello('Ivan'))
+print(fuck('Alex'))
+```
 
