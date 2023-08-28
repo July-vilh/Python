@@ -48,6 +48,29 @@ for name in names.values():
 ```
 > RESULT: Fuck u; Fuck u; Fuck u; Fuck u
 
+3) just_example (latters from the word):
+
+```
+name = "something_test"
+for latter in name:
+    print(latter);
+```
+>RESULT:
+>s
+>o
+>m
+>e
+>t
+>h
+>i
+>n
+>g
+>_
+>t
+>e
+>s
+>t
+
 
 
 ### LOOP "WHILE"
