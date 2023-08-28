@@ -1,6 +1,6 @@
 ## LOOPS ("For", "While")
 
-### LOOP "FOR"
+### LOOP "FOR" (for list, tuple, set, dictionary)
 The "FOR" loop goes on until something ends
 
 ```
@@ -22,8 +22,31 @@ names = ['Alex', 'Ivan', 'Artur', 'Nikita']
 for name in names:
     toxic_function(name)
 ```
-> RESULT: Fuck u; fuck you, Ivan!; fuck you, Artur!; fuck you, Nikita 9the lop is break after goon all names)
+> RESULT: Fuck u; fuck you, Ivan!; fuck you, Artur!; fuck you, Nikita (the lop is break after goon all names)
 
+#### For DICTIONARY:
+
+1) For keys in Dictionary:
+
+```
+from pack.module1 import toxic_function
+
+names = {'Alex': 3, 'Ivan': 2, 'Artur': 1, 'Nikita': 0}
+for name in names.keys():
+    toxic_function(name)
+```
+> RESULT: Fuck u; fuck you, Ivan!; fuck you, Artur!; fuck you, Nikita
+
+2) For values in dictionary:
+
+```
+from pack.module1 import toxic_function
+
+names = {'Alex': 3, 'Ivan': 2, 'Artur': 1, 'Nikita': 0}
+for name in names.values():
+    toxic_function(name)
+```
+> RESULT: Fuck u; Fuck u; Fuck u; Fuck u
 
 
 
