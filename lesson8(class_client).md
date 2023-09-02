@@ -10,6 +10,50 @@ ____
 В классе клиент мы можем объединить все методы API для определенного сервиса или набора сервисов. Это позволяет упростить код и упростить взаимодействие с API для других компонентов приложения. Класс клиент может содержать методы для аутентификации, отправки запросов на сервер, обработки ответов, парсинга данных и других операций, необходимых для работы с API.
 Создание класса клиента - это хорошая практика программирования при работе с API, так как он упрощает код и позволяет повторно использовать методы API в различных частях приложения.
 
+
+### The end code after full refactoring (the part of code, for example):
+
+```
+import requests
+from requests import Response
+from ..models.registaration_model import Registration_model
+from ..models.change_password import Change_password
+from ..models.change_email import Change_email
+from ..models.reset_password import Reset_password
+from requests import session
+class AccountApi:
+    def __init__(self, host, headers=None):
+        self.host = host
+        self.session = session()
+        self.session.headers = headers
+
+    def post_v1_account(self, json: Registration_model, **kwargs) -> Response:
+
+        response = self.session.post(
+            url=f"{self.host}/v1/account",
+            json=json,
+            **kwargs
+        )
+        return response
+
+    def post_account_password_change(self, json: Change_password, **kwargs) -> Response:
+
+        response = self.session.put(
+            url=f"{self.host}/v1/account/password",
+            json=json,
+            **kwargs
+        )
+        return response
+
+    def put_v1_account_token(self):
+
+        token = '221312'
+        response = requests.put(
+            url=f"{self.host}/v1/account/{token}"
+        )
+        return response
+```
+
 ## class FACADE
 
 Facade class and the first test
