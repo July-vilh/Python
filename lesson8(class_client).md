@@ -71,3 +71,32 @@ ____________________________
 
 Класс фасад включает в себя методы, которые связывают в себе методы из различных классов клиентов. Это позволяет скрыть сложность взаимодействия с несколькими сервисами и предоставить простой интерфейс для работы с ними. В класс фасад можно добавлять новые методы, которые соответствуют более сложным операциям, выполняемым с помощью нескольких сервисов.
 В нашем случае это будет класс DmApiAccount, который связывает в себе AccountApi и LoginApi
+
+```
+// Services -> dm_api_account.py:
+
+from dm_api_account.apis.account_api import AccountApi
+from dm_api_account.apis.login_api import LoginApi
+
+class dmapiaccount:
+    def __init__(self, host, headers=None):
+        self.account = AccountApi(host, headers)
+        self.login = LoginApi(host, headers)
+
+//tests -> test_post_v1_account.py:
+
+from Services.dm_api_account import dmapiaccount
+def test_post_v1_account():
+    api = dmapiaccount(host='http://5.63.153.31:5051')
+    json = {
+    "login": "login_20",
+    "email": "login20@mail.ru",
+    "password": "login_20"
+    }
+    response = api.account.post_v1_account(
+        json=json
+    )
+    print(response)
+```
+> Result: [100%]<Response [200]>
+
